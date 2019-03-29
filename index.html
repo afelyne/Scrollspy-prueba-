@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	 <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+	<meta charset="UTF-8">
+	<title>Scrollspy</title>
+
+	<!-- Estilos CSS-->
+	<style>
+		body{
+			position: relative;
+		}
+	</style>
+
+	<!-- Scroll-->
+	<script src="js/smooth-scroll.min.js"></script>
+	<script>
+		var scroll = new SmoothScroll('a[href*="#"]', {
+		// Selectors
+		ignore: '[data-scroll-ignore]', // Selector for links to ignore (must be a valid CSS selector)
+		header: null, // Selector for fixed headers (must be a valid CSS selector)
+
+		// Speed & Easing
+		speed: 300, // Integer. How fast to complete the scroll in milliseconds
+		offset: -45, // Integer or Function returning an integer. How far to offset the scrolling anchor location in pixels
+		easing: 'easeInOutCubic', // Easing pattern to use
+		customEasing: function (time) {}, // Function. Custom easing pattern
+
+		// Callback API
+		before: function () {}, // Callback to run before scroll
+		after: function () {} // Callback to run after scroll
+		});
+	</script>
+</head>
+
+
+<body data-spy="scroll" data-target="#menu">
+	<nav id="menu" class="navbar navbar-toggleable-md navbar-light bg-faded fixed-top">
+	  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	    <span class="navbar-toggler-icon"></span>
+	  </button>
+	  <a class="navbar-brand ml-5 pl-5" href="#">Artistas</a>
+
+	  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+	    <ul class="navbar-nav mr-auto ml-auto">
+	      <li class="nav-item">
+	        <a class="nav-link active" href="#seccion-1">White Stripes <span class="sr-only">(current)</span></a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#seccion-2">Erik Mongrain</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#seccion-3">Jimmy Page</a>
+	      </li>
+	    </ul>
+	    <form class="form-inline my-2 my-lg-0">
+	      <input class="form-control mr-sm-2" type="text" placeholder="Search">
+	      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+	    </form>
+	  </div>
+	</nav>
+
+	<div class="container">
+		<div id="seccion-1" class="mt-5 pt-5">
+			<h1 class="display-4">White Stripes</h1>
+			<img src="images/guit-0.jpg" alt="" class="img-fluid">
+			<img src="images/guit-1.jpg" alt="" class="img-fluid mt-4">
+			<img src="images/guit-2.jpg" alt="" class="img-fluid mt-4">
+		</div>
+		<div id="seccion-2" class="mt-5 pt-5">
+			<h1 class="display-4">Erik Mongrain</h1>
+			<img src="images/guit-3.jpg" alt="" class="img-fluid">
+			<img src="images/guit-4.jpg" alt="" class="img-fluid mt-4">
+			<img src="images/guit-5.jpg" alt="" class="img-fluid mt-4">
+		</div>
+		<div id="seccion-3" class="mt-5 pt-5">
+			<h1 class="display-4">Jimmy Page</h1>
+			<img src="images/guit-7.jpg" alt="" class="img-fluid">
+			<img src="images/guit-6.jpg" alt="" class="img-fluid mt-4">
+		</div>
+	</div>
+
+	<!-- jQuery first, then Tether, then Bootstrap JS. -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha384-3ceskX3iaEnIogmQchP8opvBy3Mi7Ce34nWjpBIwVTHfGYWQS9jwHDVRnpKKHJg7" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+	
+</body>
+</html>
